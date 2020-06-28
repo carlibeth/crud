@@ -17,7 +17,7 @@ enviar.addEventListener("submit", function (event) {
     const datos = new FormData(enviar);
     const xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "/html/card.html", true);
+    xhr.open("GET", "html/card.html", true);
 
     xhr.onload = function () {
         if (this.status === 200) {
