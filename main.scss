@@ -1,0 +1,257 @@
+$font-family: arial;
+
+
+
+.max-container {
+   
+    max-width: 1152px;
+    height: 700px;
+    position: relative;
+    left: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+   
+}
+.header {
+    display: flex;
+    height: 74px;
+    background-color: #C4C4C4;
+    margin: 0;
+    padding: 0;
+    &_nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        margin: 15px;
+        
+        &-title {
+            font-family: $font-family;
+            font-size: 36px;
+            line-height: 42px;
+            margin: 0;
+            padding: 0;
+        }
+        &-agg {
+            margin: 0;
+            padding: 0;
+            font-family: $font-family;
+            font-size: 12px;
+        }
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: auto;
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    &_card {
+        max-width: 240px;
+        height: 328px;
+        border: 1px solid #A1A1A1;
+        box-sizing: border-box;
+        
+        &-head {
+            display: flex;
+            justify-content: space-between;
+           
+            &-hbtn {
+                border: none;
+                
+                font-size: 9px;
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+        &-img {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            left: 45px;
+            top: 20px;
+            border-radius: 100%;
+            background-color: yellow;
+            &-perfil {
+                position: relative;
+                width: 100%;
+                left: 30px;
+                top: 50px;
+                
+            }
+
+        }
+        &-e-1 {
+            font-family: $font-family;
+            font-size: 20px;
+            position: relative;
+            width: 72px;
+            height: 24px;
+            left: 106px;
+            top: 30px;
+            margin: 0;
+           
+        }
+        &-e-2 {
+            position: relative;
+            font-family: $font-family;
+            font-size: 16px;
+            width: 122px;
+            height: 19px;
+            left: 81px;
+            top: 35px;
+            margin: 0;
+           
+        }
+        &-e-3 {
+            position: relative;
+            width: 31px;
+            height: 19px;
+            left: 126px;
+            top: 45px;
+            font-family: $font-family;
+            font-size: 16px;
+            margin: 0;
+        }
+        &-e-4 {
+            position: relative;
+            width: 211px;
+            height: 86px;
+            left: 37px;
+            top: 60px;
+            font-family: $font-family;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        
+
+
+
+    }
+}
+
+// MODAL DELETE
+.dlt {
+    position: absolute;
+    width: 469px;
+    height: 204px;
+    left: 373px;
+    top: 330px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.75);
+    &-x {
+        position: relative;
+        left: 440px ;
+        top: 5px;
+    }
+    &-text {
+        position: relative;
+        width: 327px;
+        margin: 50px 72px 50px;
+        font-family: $font-family;
+        font-size: 14px;
+        
+    }
+    &-bts {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin-left: 40px;
+        
+        &_btn {
+            border-radius: 0;
+            border: none;
+            padding: 10px;
+            
+            background-color: gray;
+            width: 129px;
+            height: 41px;
+
+        }
+
+    }
+}
+//    MODAL AGREGAR - EDITAR
+
+.add {
+    position: absolute;
+    max-width: 700px;
+    height:500px;
+    left: 373px;
+    top: 100px;
+    box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.75);
+    
+    &-head {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        width: 100%;
+        font-family: $font-family;
+        background-color: white;
+        &_text {
+            margin: 20px;
+        }
+        
+        &_descartar {
+            width: 30px;
+            height: 30px;
+            border: none;
+            background: none;
+            margin-right: 20px;
+            
+        }
+    }
+    &-form {
+        width: 100%;
+        background-color: white;
+        &_input {
+            width: 296px;
+            height: 30px;
+            margin: 20px;
+            padding: 0;
+            color: black;
+
+        }
+        &_area {
+            width: 645px;
+            height: 100px;
+            margin: 20px;
+        }
+        &_btn {
+            border-radius: 0;
+            border: none;
+            padding: 10px;
+           
+            background-color: gray;
+            width: 129px;
+            height: 41px;
+
+        }
+    }
+    
+}
+
+.primary {
+    position: absolute;
+    left: 426px;
+    top: 312px;
+    width: 244px;
+    height: 67px;
+    border: none;
+    font-family: $font-family;
+    font-weight: bold;
+    background-color: #C4C4C4;
+}
+
+.oculto {
+    display: none;
+}
+.mostrar {
+    display: block;
+}

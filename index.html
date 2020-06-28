@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="max-container">
+        <header class="header"> 
+            <div class="header_nav">
+                <p class="header_nav-title">DOG CRUD</p>
+                <a class="header_nav-agg agregar">Agregar Mascota</a>
+            </div>
+        </header>
+
+        <main class="grid-container" id="main">
+            
+            <button class="primary agregar mostrar" id="active">Agregar Mascota</button>
+
+
+            
+
+        </main>
+        <!-- agregar -->
+        <div class="add oculto" id="agregar"> 
+            <div class="add-head">
+                <p class="add-head_text">Agregar Mascota</p>
+                <button class="add-head_descartar">X</button>
+            </div>
+            <div class="add-form">
+                <form id="formulario">
+                    <input type="text"  name="name" class="add-form_input" placeholder="Nombre">
+                    <input type="text" name="lastname" class="add-form_input" placeholder="Apellido">
+                    <input type="text" name="race" class="add-form_input" placeholder="Raza" >
+                    <input type="tel" name="contact" class="add-form_input" placeholder="Telefono" >
+                    <input type="text" name="dress" class="add-form_input"placeholder="Pais"  >
+                    <input  name="img" class="add-form_input" type="url" placeholder="url de Fotografia">
+                    <textarea name="description" class="add-form_area" cols="30" rows="10" placeholder="Sobre él/ella"></textarea>
+                    <div class="dlt-bts">
+                        <button class="dlt-bts_btn">ACEPTAR</button>
+                        <button class="dlt-bts_btn">CANCELAR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+
+
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
